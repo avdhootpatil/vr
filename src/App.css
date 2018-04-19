@@ -1,0 +1,180 @@
+.App {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100% !important;
+  height: 100% !important;
+  /* background-image: url("./vr.jpg"); */
+  background: rgb(153, 170, 175);
+}
+
+
+
+.Set{
+  background: black;
+}
+
+.S{
+  background: red;
+}
+
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.PreviewBox{
+    height: 80px;
+    width: 40px;
+}
+
+.PreviewBoxInfo{
+      height: 40px;
+      width: 20px;
+      color: black;
+}
+
+.SideBar{
+  float: left;
+  width: 250px;
+  height: 100% !important;
+  background:#2c3e50 ;
+  overflow: hidden;
+  margin-left: -250px;
+  transition: 0.8s all;
+  z-index: 1;
+  position:fixed;
+  top:0;
+  left:0;
+  opacity: 0.9;
+}
+
+.Side{
+  margin-left: 0;
+}
+
+.Original{
+  margin-left: -250px;
+}
+
+.SideBar ul{
+  margin: 0;
+  padding: 0;
+}
+
+.SideBar ul li {
+  list-style: none;
+}
+
+.SideBar ul li a{
+  text-decoration: none;
+  color: white;
+  height: 80px;
+  width: 100%;
+  font-size: 30px;
+  line-height: 80px;
+  text-align: center;
+  display: block;
+  transition: 0.9s all;
+  cursor: pointer;
+}
+
+.SideBar ul li a:hover{
+ color: mediumturquoise;
+ text-shadow: teal;
+}
+
+.Btn{
+  float:left;
+  height:400px;
+  padding: 0 10px;
+  font-size: 40px;
+  text-decoration: none;
+  transition: 0.5s all;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: 0;
+  top: 0;
+  align-items: center;
+  /* right: 0;
+  z-index:1;*/
+  /* position: fixed;  */
+}
+
+/* .Btn:hover{
+  border: 1px solid grey;
+} */
+
+/* .Icon-bar{
+  border: 1px solid black;
+} */
+
+.Btn:before{
+  content: '';
+  border: none;
+}
+
+.Btnc:before{
+  content: '';
+  border: none;
+}
+
+.header{
+  height: 200px;
+  width: 100%;
+  background: rgb(84, 116, 116);
+  /* z-index: 1 !important; */
+  /* opacity: 0.7; */
+  
+}
+
+ .header-image{
+  height: 100px;
+  width: 200px;
+  margin-left:50px;
+  margin-top: 50px;
+  border-radius: 30px;
+  background: white;
+  float: left;
+}
+
+.PreviewBox{
+ transition: 0.5s all;
+ cursor: pointer;
+}
+
+.PreviewBox:hover{
+  background: darkslategrey;
+}
+
+
+.Footer{
+  Background:rgb(77, 128, 128)
+}
+
+.LargeImage{
+  background: rgb(92, 110, 110)
+}
