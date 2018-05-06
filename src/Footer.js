@@ -5,7 +5,7 @@ import Para from './Para.js';
 let footerStyle = {
     height:"300px",
     width:"100%",
-    marginTop:"15px",
+    // marginTop:"15px",
     marginBottom:"15px"
     
 }

@@ -6,7 +6,7 @@
   width: 100% !important;
   height: 100% !important;
   /* background-image: url("./vr.jpg"); */
-  background: rgb(153, 170, 175);
+  /* background: rgb(153, 170, 175); */
 }
 
 
@@ -108,7 +108,7 @@
 
 .Btn{
   float:left;
-  height:400px;
+  height:20px;
   padding: 0 10px;
   font-size: 40px;
   text-decoration: none;
@@ -178,3 +178,7 @@
 .LargeImage{
   background: rgb(92, 110, 110)
 }
+
+/* .Carousell{
+  position: static;
+} */

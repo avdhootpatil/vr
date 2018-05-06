@@ -29,14 +29,14 @@ class SideBar extends Component{
         <div ref ="toggle"  onMouseLeave={this.handleToggle} className = "SideBar">
                  <ul>
   
-                    <li><Link to='/'  >name</Link></li>
+                    <li><Link to='/qwer'  >name</Link></li>
                     <li><Link to='/'  >Home</Link></li>
                     <li><Link to='/play' >Favourites</Link></li>
                     <li><Link to='/subscribed' >Subscribed</Link></li>
-                    <li><Link to='/'>Liked </Link></li>
-                    <li><Link to='/'>Categories</Link></li>
-                    <li><Link to='/'>About us</Link></li>
-                    <li><Link to='/'>Contact</Link></li>
+                    <li><Link to='/qwew'>Liked </Link></li>
+                    <li><Link to='/categories'>Categories</Link></li>
+                    <li><Link to='/qwe'>About us</Link></li>
+                    <li><Link to='/wqe'>Contact</Link></li>
                  </ul>
         </div>
                       <button ref="btn" className = "Btn" onMouseEnter = {this.handleToggle}>

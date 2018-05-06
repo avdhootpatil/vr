@@ -12,19 +12,12 @@ import {Link} from 'react-router-dom';
 import Switch from 'react-router/Switch';
 import SideBar from "./Sidebar.js";
 import Header from "./Header.js";
-import Subscribe from './Subscribe';
+import Subscribe from './Subscribe.js';
 import Footer from './Footer.js';
+import Carousel from './carousel.js';
+import HomeContent from './Homecontent.js';
+import Categories from './Categories';
 
-class LargeImage extends Component{
-  render() {
-      return(
-        <div style={{height:"300px",width:"100%",
-                     marginTop:"15px",marginBottom:"15px"}}  className="LargeImage"  >
-          ]<img/>
-        </div>
-      );
-  }
-}
 
 // class App extends Component {
 //   handleToggle = () => {===
@@ -53,23 +46,20 @@ class App extends Component {
     return (
       <Router>
         <div className="App" >
-                   <Header/>
+                 <Header/>
                   <SideBar/>
-                  <Preview/>
-                  <Preview/>
-                  <Preview/>
-                  <Preview/>
-                  <LargeImage/>
-                  <Footer/>
+                
           <div >
                   
                   <Switch>
                       <Route path='/play' component={Play} exact/>
+                      <Route path='/' component={HomeContent} exact />
                       <Route path='/subscribed' component={Subscribe} exact/>
+                      <Route path='/categories' component={Categories} exact/>
                     </Switch>
                   
           </div>
-          
+          <Footer/>
         </div>
       </Router>
     );
