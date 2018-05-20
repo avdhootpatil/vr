@@ -7,7 +7,7 @@ let carstyles = {
     width:"100%",
     height:"auto",
     minHeight:"400px",
-    background:"black",
+    background:"grey",
     paddingTop:"0px",
     paddingBottom:"0px"
 }
