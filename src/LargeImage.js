@@ -5,7 +5,7 @@ class LargeImage extends Component{
         return(
           <div style={{height:"300px",width:"100%",
                        marginTop:"15px"}}  className="LargeImage"  >
-            <img/>
+            <img alt="showImage" />
           </div>
         );
     }

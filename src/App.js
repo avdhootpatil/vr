@@ -1,23 +1,15 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
-// import { Router,Route } from "react-router";
-import { findDOMNode } from 'react-dom';
-import Ionicon from 'react-ionicons';
-import logo from './logo.svg';
 import './App.css';
 import Play from './Play.js';
-import Preview from "./Preview.js";
 import { BrowserRouter as Router,Route } from 'react-router-dom';
-import {Link} from 'react-router-dom';
 import Switch from 'react-router/Switch';
 import SideBar from "./Sidebar.js";
 import Header from "./Header.js";
 import Subscribe from './Subscribe.js';
 import Footer from './Footer.js';
-import Carousel from './carousel.js';
 import HomeContent from './Homecontent.js';
 import Categories from './Categories';
-
+import ima from './vr.jpg';
 
 // class App extends Component {
 //   handleToggle = () => {===
@@ -38,6 +30,10 @@ import Categories from './Categories';
 //   }
 // }
 
+let appstyles = {
+  background:ima
+}
+
 
 
 class App extends Component {
@@ -45,7 +41,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App" >
+        <div className="App" style={{appstyles}} >
                  <Header/>
                   <SideBar/>
                 

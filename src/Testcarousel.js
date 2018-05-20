@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './download.jpg';
 import Carousel from 're-carousel';
 import IndicatorDots from './indicator-dots'
 import Buttons from './buttons'

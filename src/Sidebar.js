@@ -2,14 +2,8 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 // import { Router,Route } from "react-router";
 import { findDOMNode } from 'react-dom';
-import Ionicon from 'react-ionicons';
-import logo from './logo.svg';
 import './App.css';
-import Play from './Play.js';
-import Preview from "./Preview.js";
-import { BrowserRouter as Router,Route } from 'react-router-dom';
 import {Link} from 'react-router-dom';
-import Switch from 'react-router/Switch';
 import ToggleButton from './ToggleButton.js'
 
 

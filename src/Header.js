@@ -16,7 +16,7 @@ class Header extends Component{
     render() {
       return(
         <div className="header" >
-            <img className="header-image" />
+            <img alt="logo" className="header-image" />
             <input style={{...inputStyle}} type="text"/>
         </div>
       );

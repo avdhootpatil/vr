@@ -60,7 +60,10 @@
   float: left;
   width: 250px;
   height: 100% !important;
-  background:#2c3e50 ;
+  /* background:#2c3e50 ; */
+  background: black;
+  /* background-image: url('./vr1.jpg'); */
+  background-blend-mode:lighten;
   overflow: hidden;
   margin-left: -250px;
   transition: 0.8s all;
@@ -103,6 +106,7 @@
 
 .SideBar ul li a:hover{
  color: mediumturquoise;
+ /* color:black; */
  text-shadow: teal;
 }
 

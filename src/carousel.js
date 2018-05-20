@@ -1,33 +1,31 @@
 import React, { Component } from 'react';
 import { AutoRotatingCarousel, Slide } from 'material-auto-rotating-carousel';
-import { green400, green600, blue400, blue600, red400, red600 } from 'material-ui/styles/colors';
-import SwipeableViews from 'react-swipeable-views';
+import { green400, green600, blue400, blue600, red400, red600, black, grey800, green300, grey600, faintBlack } from 'material-ui/styles/colors';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import {Link} from 'react-router-dom';
-import Switch from 'react-router/Switch';
-import { BrowserRouter as Router,Route } from 'react-router-dom';
-import HomeContent from './Homecontent.js';
+import vr from './vr.jpg';
+import vr1 from './vr1.jpg';
+import vr2 from './vr2.jpg';
+import vr3 from './vr3.png';
+
 
 let defaultStyle = {
     height:"100%",
     width : "100%",
-    
 }
 
-let close = false;
 
 class Carousell extends Component{
 
-  //  openFun = {
-  //    open :{
-  //     close : false
-  //    }
-  //  }
-
+  state = {
+    toHome:true
+  }
+   
   getStarted = () =>{
-       <Switch>
-          <Route path='/Home' component={HomeContent} exact />
-       </Switch>
+      this.setState(()=>(
+    {
+      toHome:false
+    }))
+    console.log("get started button clicked");
   }
    
    
@@ -38,31 +36,42 @@ class Carousell extends Component{
             <div className="Carousell" >
               <MuiThemeProvider >
       <AutoRotatingCarousel  style={{...defaultStyle}}
-        open={true}
+        open={this.state.toHome}
         onStart={this.getStarted}
         label="Get started"
+        // footerStyle={{
+        //   height:"10%"
+        // }}
         
       >
         <Slide 
-          media={<img src="http://www.icons101.com/icon_png/size_256/id_79394/youtube.png" />}
-          mediaBackgroundStyle={{ backgroundColor: red400 }}
-          contentStyle={{ backgroundColor: red600 }}
-          title="This is a very cool feature"
-          subtitle="Just using this will blow your mind."
+          media={<img src={vr} />}
+          mediaBackgroundStyle={{ backgroundColor: faintBlack}}
+          contentStyle={{ backgroundColor:faintBlack }}
+          title="This is the destination for matches in vr"
+          subtitle="Only place for virtual reality experience."
         />
         <Slide
-          media={<img src="http://www.icons101.com/icon_png/size_256/id_80975/GoogleInbox.png" />}
-          mediaBackgroundStyle={{ backgroundColor: blue400 }}
-          contentStyle={{ backgroundColor: blue600 }}
-          title="Ever wanted to be popular?"
-          subtitle="Well just mix two colors and your are good to go!"
+          media={<img src={vr1} />}
+          mediaStyle={{height:"100%"}}
+          mediaBackgroundStyle={{ backgroundColor:faintBlack }}
+          contentStyle={{ backgroundColor:faintBlack }}
+          title="Watch every sport"
+          subtitle="Don't just watch but experience the matches"
         />
         <Slide
-          media={<img src="http://www.icons101.com/icon_png/size_256/id_76704/Google_Settings.png" />}
-          mediaBackgroundStyle={{ backgroundColor: green400 }}
-          contentStyle={{ backgroundColor: green600 }}
-          title="May the force be with you"
-          subtitle="The Force is a metaphysical and ubiquitous power in the Star Wars universe."
+          media={<img src={vr2} />}
+          mediaBackgroundStyle={{ backgroundColor: faintBlack }}
+          contentStyle={{ backgroundColor: faintBlack }}
+          title="Feel the stadium"
+          subtitle="Watch at your stadium"
+        />
+        <Slide
+          media={<img src={vr3} />}
+          mediaBackgroundStyle={{ backgroundColor: faintBlack }}
+          contentStyle={{ backgroundColor: faintBlack }}
+          title="Subscribe and bring stadium at tour home"
+          subtitle="Subscribe!"
         />
       </AutoRotatingCarousel>
       </MuiThemeProvider>

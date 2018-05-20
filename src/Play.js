@@ -1,5 +1,4 @@
-import App from "./App.js";
-import { Router,Route } from "react-router";
+
 import React,{ Component  } from 'react';
 import Preview from "./Preview.js";
 
