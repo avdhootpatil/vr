@@ -13,6 +13,13 @@ let categorieStyle ={
         color:"white",
         paddingTop:"10px",
         paddingBottom:"10px"
+    },
+    row : {
+        marginBottom : "20px",
+        marginTop : "20px",
+        background : "#000033",
+        height : "300px",
+        width : "100%"
     }
 }
 
@@ -43,8 +50,8 @@ class Categories extends Component {
   
     render() {
       return (
-          <div style={categorieStyle.root} >  
-          {this.state.data.type ?  
+          <div  >  
+          {/* {this.state.data.type ?  
           <div>
                 <h1 style={categorieStyle.categorieHeader} >
                 {this.state.data.type.name}
@@ -56,7 +63,16 @@ class Categories extends Component {
                 }
                  <div style= {categorieStyle.root} ></div>
                 </div>:<h1>Loading...</h1>
-            } 
+            }  */}
+            <div style={categorieStyle.row} > 
+              
+            </div>
+            <div style={categorieStyle.row} > 
+                
+            </div>
+            <div style={categorieStyle.row} > 
+                
+            </div>
           </div>
       );
     }

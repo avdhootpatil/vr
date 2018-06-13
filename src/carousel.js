@@ -12,27 +12,37 @@ let defaultStyle = {
     height:"100%",
     width : "100%",
 }
+ 
+let openedOnce = false;
+ 
+
+console.log("not opened yet");
 
 
 class Carousell extends Component{
 
   state = {
-    toHome:true
+    toHome:true  
   }
+
+  
    
   getStarted = () =>{
+    // console.log("carousel opened" + "openedonce : "+ opnedOnce);
       this.setState(()=>(
     {
-      toHome:false
+      toHome:false,
+      openedOnce:true
     }))
     console.log("get started button clicked");
   }
-   
+
+ 
    
     render() {
         return(
     
-        
+      
             <div className="Carousell" >
               <MuiThemeProvider >
       <AutoRotatingCarousel  style={{...defaultStyle}}

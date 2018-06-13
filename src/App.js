@@ -44,12 +44,11 @@ class App extends Component {
         <div className="App" style={{appstyles}} >
                  <Header/>
                   <SideBar/>
-                
+                  <Route path='/' component={HomeContent} exact />
           <div >
                   
                   <Switch>
-                      <Route path='/play' component={Play} exact/>
-                      <Route path='/' component={HomeContent} exact />
+                      <Route path='/play' component={Play} exact/>   
                       <Route path='/subscribed' component={Subscribe} exact/>
                       <Route path='/categories' component={Categories} exact/>
                     </Switch>

@@ -5,10 +5,13 @@ import Testcarousel from './Testcarousel.js';
 import Carousell from './carousel.js';
 
 class HomeContent extends Component{
+
+   
     render() {
+        let openedOnce =false;
         return(
             <div>
-                 <Carousell/>
+                 <Carousell openedOnce = {true} />
                  <Testcarousel/>
                  <Preview/>
                   <Preview/>
